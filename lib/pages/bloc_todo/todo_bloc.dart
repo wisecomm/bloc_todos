@@ -21,7 +21,7 @@ class TodosBloc extends Bloc<TodosEvent, TodosState> {
     try {
       //final todos = await this.todosRepository.loadTodos();
     final List<TodoEntity> todos = List.generate(
-    20, (i) => TodoEntity('Todo ㅎㅎ $i', 'A description of what needs to be done for Todo $i'));
+    20, (i) => TodoEntity('할일 ㅎㅎ $i', 'A description of what needs to be done for Todo $i'));
 
       yield TodosLoaded(
         todos.toList(),

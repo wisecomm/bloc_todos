@@ -1,6 +1,5 @@
-import 'package:equatable/equatable.dart';
 
-class TodoEntity  extends Equatable {
+class TodoEntity {
   String title;
   String description;
 
